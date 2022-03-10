@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Felipa&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*------------- CONTAINER ---------------*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #ffffff70;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px #00000030;
+}
+
+/*------------- IMAGE ---------------*/
+.imagem{
+    border-radius: 10px;
+}
+
+/*------------- TEXT ---------------*/
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 40pt;
+}
+
+/*------------- LABEL - INPUT ---------------*/
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    outline: none;
+    min-width: 350px;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+    color: #000;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:hover {
+    border-bottom: 2px solid #03ffab;
+    transition: all 0.3s ease-out;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #fff;
+}
+
+.label-float label {
+    color: #000;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #fff;
+}
+
+
+/*------------- BUTTONS ---------------*/
+.btn-eye {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 30px;
+    filter: grayscale(1);
+}
+
+.send-button {
+    background-color: transparent;
+    border-color: #000;
+    color: #000;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-out;
+}
+
+.send-button:hover {
+    background-color: #03ffab;
+    color: #000;
+}
+
+.send-button:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+p {
+    color: #000;
+    font-size: 13pt;
+    text-align: left;
+}
+
+.createAccount{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;   
+}
+
+/*------------- FOOTER ---------------*/
+.footer {
+    position: fixed;
+    bottom: 2%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+ }
+
+ .footer:hover{
+    color: #03ffab;
+ }
